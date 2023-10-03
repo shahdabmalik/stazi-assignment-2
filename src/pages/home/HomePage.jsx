@@ -1,5 +1,5 @@
 import Navbar from "../../components/navbar/Navbar"
-import PropertyContainer from "./propertyContainer/propertyContainer"
+import PropertyContainer from "./propertyContainer/PropertyContainer"
 
 const HomePage = () => {
 

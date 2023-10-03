@@ -41,7 +41,7 @@ const Card = ({ property }) => {
                         </div>
                     </div>
                     <div className="pt-5 pb-1 flex justify-between items-center px-2" >
-                        <p className="text-lg font-semibold text-slate-700" > <span className="text-blue-500" >${property?.price}</span> <span className="text-sm " >/ month</span></p>
+                        <p className="text-lg font-semibold text-slate-700" >{property.listingType === 'For Rent' ? <><span className="text-blue-500" >${property?.price}</span> <span className="text-sm " >/ month</span> </> : <span className="text-blue-500" >${property?.price}</span>} </p>
                         <div className="flex gap-3 items-center" >
                             <button type="button" className="bg-white text-blue-600 px-5 py-2.5 rounded-full font-semibold text-sm border border-blue-600" >Read More</button>
                         </div>
@@ -50,8 +50,8 @@ const Card = ({ property }) => {
                     <div className="px-4 py-2 bg-white absolute top-5 left-5 text-blue-600 text-sm font-medium rounded-full cursor-pointer" >{property?.listingType}</div>
                     {property?.popular && <div className="absolute top-[245px] -left-2" >
                         <div className="bg-blue-700 text-white font-medium text-sm px-5 py-2.5 rounded-md shadow-md rounded-bl-none relative"  >
-                        Popular
-                        <span className="w-0 h-0 border-4 border-blue-800 rounded-bl-full absolute -bottom-2 left-0 bg-blue-800" ></span>
+                            Popular
+                            <span className="w-0 h-0 border-4 border-blue-800 rounded-bl-full absolute -bottom-2 left-0 bg-blue-800" ></span>
                         </div>
                     </div>}
                 </div>
