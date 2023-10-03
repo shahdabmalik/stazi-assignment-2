@@ -24,7 +24,7 @@ To get started with this project, follow these steps:
    Navigate to the project directory and install the necessary dependencies:
 
    ```shell
-   cd stazi-aasignment-2
+   cd stazi-asignment-2
    npm install
    ```
 
