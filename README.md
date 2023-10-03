@@ -1,5 +1,3 @@
-
-```markdown
 # Real Estate Listings Web Application
 
 This is a React application built using Vite that displays real estate listings from mock JSON data. It incorporates various technologies and libraries to create a seamless user experience.
@@ -52,6 +50,7 @@ The project structure is organized as follows:
   - `components/`: React components used to build the user interface.
   - `redux/`: Redux-related files, including actions, reducers, and the store configuration.
   - `data/`: Mock json data.
+  - `pages/`: All the pages of the application.
 - `public/`: Static assets and the `index.html` file.
 
 ## Contributing
@@ -74,4 +73,3 @@ This project is licensed under the [MIT License](LICENSE).
 - Thanks to the creators of React, Vite, Redux, React Router DOM, and Tailwind CSS for their awesome tools and libraries!
 
 Happy coding! 🚀
-```
