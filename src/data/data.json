@@ -2,7 +2,7 @@
   {
     "id": 1,
     "streetAddress": "123 Main Street",
-    "compladdressteAddress": "123 Main Street, Dallas, IL 62701",
+    "address": "123 Main Street, Dallas, IL 62701",
     "rooms": 4,
     "beds": 3,
     "baths": 2,
@@ -81,7 +81,7 @@
   {
     "id": 7,
     "streetAddress": "890 Cedar Lane",
-    "address": "890 Cedar Lane, Dallas, WA 98101",
+    "address": "890 - 7765 Cedar Lane, Dallas, WA 98101",
     "rooms": 6,
     "beds": 4,
     "baths": 3,
@@ -107,7 +107,7 @@
   {
     "id": 9,
     "streetAddress": "456 Elm Street",
-    "address": "456 Elm Street, Miami, CO 80202",
+    "address": "456 - 8435 Elm Street, Miami, CO 80202",
     "rooms": 5,
     "beds": 3,
     "baths": 3,

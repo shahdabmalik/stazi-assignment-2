@@ -12,7 +12,7 @@ const Card = ({ property }) => {
                 <div className="pt-4 px-2" >
                     <div className=" text-slate-700 px-2" >
                         <p className="flex font-medium gap-2 items-center py-3 text-sm" > <CiLocationOn className="text-yellow-700" size={16} /> {property?.streetAddress}</p>
-                        <h3 className="text-xl  font-semibold" >{property?.address}</h3>
+                        <h3 className="text-xl h-14 font-semibold" >{property?.address}</h3>
                     </div>
                     <div className="grid grid-cols-4 pt-5 px-3  justify-between border-slate-200 border-b border-dashed" >
                         <div className="flex flex-col items-center border-r border-dashed pb-3" >

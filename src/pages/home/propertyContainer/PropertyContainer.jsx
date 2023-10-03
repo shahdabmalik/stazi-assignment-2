@@ -17,6 +17,7 @@ const PropertyContainer = () => {
 
     const handleClick = () => {
         setShowProperty(property.slice(0, showProperty.length + 3))
+        console.log("clicked");
     }
 
     return (
@@ -25,7 +26,7 @@ const PropertyContainer = () => {
                 {showProperty.map(property => <Card key={property.id} property={property} />)}
             </div>
             <div className="flex items-center justify-center" >
-                <button type="button" disabled={disableButton} onClick={handleClick} className={"px-5 py-2.5  text-white rounded-full font-medium " + (!disableButton ? ' bg-blue-600 ' : " bg-blue-400 cursor-not-allowed ")} >Show More</button>
+                <button type="button" disabled={disableButton} onClick={() => handleClick()} className={"px-5 py-2.5  text-white rounded-full font-medium " + (!disableButton ? ' bg-blue-600 ' : " bg-blue-400 cursor-not-allowed ")} >Show More</button>
             </div>
         </div>
     )

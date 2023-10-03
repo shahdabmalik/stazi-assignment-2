@@ -11,8 +11,12 @@ const propertySlice = createSlice({
     initialState,
     reducers: {
         SET_PROPERTY(state, action) {
-            const property = data.filter((d) => d?.address?.toLocaleLowerCase().includes(action.payload?.toLocaleLowerCase()))
-            state.property = property
+            if(action.payload === 'All'){
+                state.property = data
+            } else {
+                const property = data.filter((d) => d?.address?.toLocaleLowerCase().includes(action.payload?.toLocaleLowerCase()))
+                state.property = property
+            }
         },
         SET_SINGLE_PROPERTY(state, action) {
             const property = data.find((d) => d.id === parseInt(action.payload))
