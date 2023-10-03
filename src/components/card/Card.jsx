@@ -48,6 +48,12 @@ const Card = ({ property }) => {
                     </div>
                     <div className="p-2 bg-white absolute top-5 right-5 text-blue-400 rounded-full cursor-pointer" ><AiOutlineHeart size={20} /></div>
                     <div className="px-4 py-2 bg-white absolute top-5 left-5 text-blue-600 text-sm font-medium rounded-full cursor-pointer" >{property?.listingType}</div>
+                    {property?.popular && <div className="absolute top-[245px] -left-2" >
+                        <div className="bg-blue-700 text-white font-medium text-sm px-5 py-2.5 rounded-md shadow-md rounded-bl-none relative"  >
+                        Popular
+                        <span className="w-0 h-0 border-4 border-blue-800 rounded-bl-full absolute -bottom-2 left-0 bg-blue-800" ></span>
+                        </div>
+                    </div>}
                 </div>
             </div>
         </Link>
